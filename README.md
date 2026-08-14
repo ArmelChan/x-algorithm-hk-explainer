@@ -1,2 +1,44 @@
-# x-algorithm-hk-explainer
-Social media explainer + skills.md for X algorithm (HK audience)
+# 🐦 X（Twitter）嘅推薦演算法，其實係點運作㗎？
+
+> 用香港人睇得明嘅方式，講解 xAI 開源嘅 X 推薦系統（x-algorithm）
+
+---
+
+## 📱 社交平台分享文（可直接複製去 X / Threads / Facebook 用）
+
+大家滑 X 個 "For You" 版，有無諗過條演算法點揀你睇邊啲post？
+今次 xAI 罕有咁將個推薦系統開源（公開晒個source code），等大家都可以睇下佢個底層邏輯！
+
+### 🔍 個系統大致分幾大部分：
+
+📦 **Candidate Pipeline（候選篩選）**
+由成千上萬個post入面，先篩走一批可能啱你興趣嘅內容
+
+🏠 **Home Mixer（主頁混合器）**
+負責將唔同來源（追蹤緊嘅人、推薦內容等）嘅post混合埋一齊，決定邊個排先
+
+🛡️ **Abuse Enforcement（濫用防治）**
+偵測同過濾垃圾內容、機器人（Bot）帳戶
+
+🎯 **內容分級系統**
+自動判斷同標記唔同類型內容，決定畀邊啲用戶睇
+
+### 💡 點解呢個開源好重要？
+
+1️⃣ 增加透明度 - 大家終於可以睇到「黑盒」入面有咩
+2️⃣ 學術/技術交流 - 開發者可以研究、甚至貢獻改進
+3️⃣ 建立信任 - 用戶更了解自己點解會睇到某啲內容
+
+⚠️ 注意：呢個係技術愛好者/開發者向嘅開源project，主要用Rust同Python寫成，唔係一般用戶可以直接用嘅app。
+
+#XAlgorithm #開源 #演算法 #科技普及 #SocialMediaTech
+
+---
+
+## 📄 相關文件
+
+- [skills.md](./skills.md) — 記錄本專案「將技術文件轉化為社交媒體科普內容」嘅技能與流程
+
+## 🔗 資料來源
+
+本內容基於 [xai-org/x-algorithm](https://github.com/xai-org/x-algorithm) 開源專案整理而成，屬於非官方嘅科普/教育性質分享，並非原始程式碼嘅修改版本。
